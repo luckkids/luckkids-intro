@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>럭키즈: 행운을 찾아드립니다!</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* 폰트 스타일 */
+      @font-face {
+        font-family: "SDSamliphopangche_Outline";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-image: url("./static/image/background.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: "SDSamliphopangche_Outline";
+      }
+
+      /* 전체 스타일 */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* 헤더 스타일 */
+      header {
+        background-color: rgba(51, 51, 51, 0.7);
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header nav p {
+        font-weight: bold;
+        font-size: 32px;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      /* 메인 스타일 */
+      main {
+        margin: 20px auto;
+        max-width: 1200px;
+        padding: 0 20px;
+      }
+
+      /* 홈 섹션 스타일 */
+      .hero-section {
+        background-color: rgba(247, 247, 247, 0.4);
+        padding: 100px 0;
+        text-align: center;
+        border-radius: 20px;
+        position: relative;
+      }
+
+      .hero-section h1 {
+        font-size: 96px;
+        margin-bottom: 20px;
+        z-index: 1;
+        position: relative;
+      }
+
+      .hero-section p {
+        font-size: 48px;
+        margin-bottom: 40px;
+        z-index: 1;
+        position: relative;
+      }
+
+      /* 이미지 컨테이너 스타일 조정 */
+      .image-container {
+        position: absolute;
+        top: 50%;
+      }
+
+      .image-left {
+        left: 10px;
+      }
+
+      .image-right {
+        right: 10px;
+      }
+
+      /* 푸터 스타일 */
+      footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background-color: rgba(51, 51, 51, 0.7);
+        color: #fff;
+        text-align: right;
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <p>럭키즈 🍀</p>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <!-- <div class="image-container image-left">
+          <img src="./static/image/1.png" alt="럭키즈1" width="100" />
+        </div> -->
+        <h1>럭키즈 소개페이지</h1>
+        <p>📢 개발중</p>
+        <div class="image-container image-right">
+          <img src="./static/image/2.png" alt="럭키즈2" width="250" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 럭키즈. 모든 권리 보유.</p>
+    </footer>
+  </body>
+</html>
