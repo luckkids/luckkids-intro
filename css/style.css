@@ -1,0 +1,363 @@
+@import "reset.css";
+
+/*-------------------------
+* Theme
+-------------------------*/
+body{
+    position: relative;
+    background: #000;
+    font-family: 'Pretendard';
+}
+
+.d-block-m{
+    display:none;
+}
+
+/*-------------------------
+* Header + Footer
+-------------------------*/
+header{
+    padding:18px 70px;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.3);
+    position: sticky;
+    top:0;
+}
+
+footer{
+    width:100%;
+    display: flex;
+    color:#7F7F7F;
+    padding:30px 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer ul{
+    display:flex;
+    align-items: center;
+    gap:15px
+}
+
+/*-------------------------
+* Main
+-------------------------*/
+main{padding:0 140px}
+main section{max-width:1780px; margin:0 auto;}
+
+/*kv*/
+.section-kv{
+    padding-top:60px;
+}
+
+.section-kv article{
+    width:100%
+}
+
+.section-kv .article-title{
+    width:745px;
+    max-width:100%;
+    margin-bottom:96px;
+}
+
+.section-kv h2 span{display: block; width:100%;}
+.section-kv h2 img{width:100%}
+.section-kv h2 small{
+    display: block;
+    font-weight: bold;
+    font-size:32px;
+    color:#8FF377;
+    margin-top:35px;
+}
+.article-img{
+    width:850px;
+    max-width:100%;
+    margin:0 auto;
+    position:relative;
+}
+.article-img img{
+    width:100%;
+}
+
+.luckkids{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+
+/*character*/
+.section-character{
+    position: relative;
+}
+.article-particle{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.particle-stick-wrap{
+
+}
+.particle-stick-wrap span{
+    position: absolute;
+    display:block;
+    left:50%;
+    top:50%;
+    transform:translate3d(-50%,-50%,0);
+}
+
+.particle-stick-wrap span img{
+    width:100%;
+    height:auto;
+}
+
+.particle-stick-wrap .shape-1{
+    width:33px;
+    left:-10%;
+}
+.particle-stick-wrap .shape-2{
+    width:33px;
+    top:20%;
+    left: 4%;
+}
+.particle-stick-wrap .shape-3{
+    width:22px;
+    top:10%;
+    left: 14%;
+}
+.particle-stick-wrap .shape-4{
+    width:53px;
+    top:-10%;
+    left:5%;
+}
+.particle-stick-wrap .shape-5{
+    width:21px;
+    top: -11%;
+    left: 57%;
+}
+.particle-stick-wrap .shape-6{
+    width:33px;
+    top: 9%;
+    left: 92%;
+}
+.particle-stick-wrap .shape-7{
+    width:33px;
+    top:45%;
+    left:100%;
+}
+
+.article-img{
+    height:300vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.article-img figure{
+    position:sticky;
+    bottom:-120px;
+}
+
+/*description*/
+.article-description{
+    font-size:32px;
+    font-weight:700;
+    line-height:1.5;
+    color:#fff;
+    height:100vh;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.article-description a{
+    margin-top:60px;
+    display: flex;
+    background-color:#fff;
+    padding:15px 35px;
+    align-items: center;
+    justify-content: center;
+    font-size:14px;
+    font-weight:600;
+    line-height:1.5;
+    border-radius: 100px;
+}
+
+.article-description img{
+    width:18px;
+    height:auto;
+    margin-right:10px;
+}
+
+
+
+/*-------------------------
+* BreakPoint Tablet
+-------------------------*/
+@media screen and (max-width:1240px){
+    header{
+        padding:18px 40px;
+    }
+
+    footer{
+        padding:30px 40px;
+    }
+
+    /*-------------------------
+    * Main
+    -------------------------*/
+    main{padding:0 40px}
+
+}
+
+@media screen and (max-width:650px){
+    .d-block-pc{
+        display:none;
+    }
+    .d-block-m{
+        display:block;
+    }
+
+    header{
+        padding:3vw 6.1vw;
+    }
+
+    header h1{
+        width:29vw;
+    }
+
+    header h1 img{width:100%;}
+
+    footer{
+        padding:30px 10vw;
+    }
+
+    main{
+        padding:0;
+    }
+
+    main section{
+        max-width:unset;
+        width:100%;
+    }
+
+    .section-kv h2 small{
+        font-size:5vw;
+        margin-top:6.4vw;
+        line-height:1.4;
+    }
+
+    .section-kv .article-title{
+        width:100%;
+        padding:0 10vw;
+    }
+
+    .character-wrap{
+        padding-top:82vw;
+        width:100%;
+        position: relative;
+    }
+
+    .character-wrap .bg{
+        position: absolute;
+        top:0;
+        width:100%;
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    .character-wrap span{
+        position: absolute;
+        top:0;
+        display: block;
+        height:100%;
+        width:100%;
+        overflow: hidden;
+    }
+
+    .article-img figure{
+        max-width:unset;
+        flex:0 0 auto;
+    }
+
+    .article-img figure{
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+    .article-img figure img{
+        width:123vw;
+    }
+
+    .article-img img.luckkids{
+        left:50%;
+        transform:translateX(-50%);
+        width:112vw;
+    }
+
+    .article-img figure{
+        bottom:-2vw;
+    }
+
+    .article-description{
+        font-size:24px;
+        line-height:1.58;
+    }
+
+
+    .particle-stick-wrap span{
+        position: absolute;
+        display:block;
+        left:50%;
+        top:50%;
+        transform:translate3d(-50%,-50%,0);
+    }
+
+    .particle-stick-wrap span img{
+        width:100%;
+        height:auto;
+    }
+    .particle-stick-wrap .shape-1{
+        width: 12px;
+        left: 95%;
+        top: 30%;
+    }
+    .particle-stick-wrap .shape-2{
+        width: 15px;
+        top: 7%;
+        left: 6%;
+    }
+    .particle-stick-wrap .shape-3{
+        width: 10px;
+        top: 14%;
+        left: 20%;
+    }
+    .particle-stick-wrap .shape-4{
+        width: 38px;
+        top: -19%;
+        left: 75%;
+    }
+    .particle-stick-wrap .shape-5{
+        width: 12px;
+        top: -13%;
+        left: 19%;
+    }
+    .particle-stick-wrap .shape-6{
+        width: 19px;
+        top: 6%;
+        left: 92%;
+    }
+    .particle-stick-wrap .shape-7{
+        width: 14px;
+        top: -1%;
+        left: 70%;
+    }
+
+}

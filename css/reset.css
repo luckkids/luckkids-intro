@@ -1,0 +1,24 @@
+/*-------------------------
+* Gil reset txt 20200316.
+-------------------------*/
+
+@charset "utf-8";
+/* --------------------
+-  tag
+----------------------*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,article,nav,header,footer,video,aside,pre,a,address,code,em,i,font,img,strong,sub,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,figure,section,article,main,button{margin:0; padding:0; border:0; font-weight:inherit; font-style:inherit; vertical-align:baseline; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; outline:0;}
+a{text-decoration:none; color:#000;}
+ol,ul {list-style:none;}
+table {border-collapse:separate; border-spacing:0;}
+caption,th,td {text-align:left; font-weight:normal;}
+b{font-weight:normal;}
+figure,figcaption,article,header,footer,nav,aside,main{display:block;}
+button{cursor:pointer;}
+img{font-size:12px;}/*alt 사라짐방지*/
+
+/*--------------------
+- selection
+----------------------*/
+::-moz-selection {background: rgb(251, 186, 51);color:rgb(0, 0, 0);}
+::selection {background: rgb(251, 186, 51);color:rgb(0, 0, 0);}
+::-moz-selection {background: rgb(251, 186, 51);color:rgb(0, 0, 0);}
