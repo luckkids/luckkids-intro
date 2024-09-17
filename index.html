@@ -1,140 +1,81 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>럭키즈: 행운을 찾아드립니다!</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      /* 폰트 스타일 */
-      @font-face {
-        font-family: "SDSamliphopangche_Outline";
-        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff")
-          format("woff");
-        font-weight: normal;
-        font-style: normal;
-      }
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Luckkids : 행운을 키우는 습관앱, 럭키즈</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="우리는 행운아! 행운을 키우지! 건강하고 긍정적인 몸과 마음을 만드는 습관이 우리의 행운을 키워줄 거예요.">
+    <meta name="keyword" content="습관, 행운, 투두리스트, 계획, 스케쥴">
+    <meta property="og:title" content="Luckkids : 행운을 키우는 습관앱, 럭키즈">
+    <meta property="og:description" content="우리는 행운아! 행운을 키우지! 건강하고 긍정적인 몸과 마음을 만드는 습관이 우리의 행운을 키워줄 거예요.">
+    <meta property="og:image" content="http://design.samsung.com/kr/share/thumb/share_thumb_00_400x400.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Luckkids : 행운을 키우는 습관앱, 럭키즈">
+    <meta name="twitter:description" content="우리는 행운아! 행운을 키우지! 건강하고 긍정적인 몸과 마음을 만드는 습관이 우리의 행운을 키워줄 거예요.">
+    <meta name="twitter:image" content="/">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+<!--    <link rel="apple-touch-icon" href="http://design.samsung.com/kr/share/thumb/share_thumb_00_57x57.jpg">-->
+<!--    <link rel="shortcut icon" href="http://design.samsung.com/kr/share/thumb/share_thumb_00_196x196.jpg">-->
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
 
-      body {
-        position: relative;
-        height: 100vh;
-        width: 100vw;
-        background-image: url("./static/image/background.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-family: "SDSamliphopangche_Outline";
-      }
-
-      /* 전체 스타일 */
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      /* 헤더 스타일 */
-      header {
-        background-color: rgba(51, 51, 51, 0.7);
-        color: #fff;
-        padding: 10px 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      header nav p {
-        font-weight: bold;
-        font-size: 32px;
-      }
-
-      nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-      }
-
-      /* 메인 스타일 */
-      main {
-        margin: 20px auto;
-        max-width: 1200px;
-        padding: 0 20px;
-      }
-
-      /* 홈 섹션 스타일 */
-      .hero-section {
-        background-color: rgba(247, 247, 247, 0.4);
-        padding: 100px 0;
-        text-align: center;
-        border-radius: 20px;
-        position: relative;
-      }
-
-      .hero-section h1 {
-        font-size: 96px;
-        margin-bottom: 20px;
-        z-index: 1;
-        position: relative;
-      }
-
-      .hero-section p {
-        font-size: 48px;
-        margin-bottom: 40px;
-        z-index: 1;
-        position: relative;
-      }
-
-      /* 이미지 컨테이너 스타일 조정 */
-      .image-container {
-        position: absolute;
-        top: 50%;
-      }
-
-      .image-left {
-        left: 10px;
-      }
-
-      .image-right {
-        right: 10px;
-      }
-
-      /* 푸터 스타일 */
-      footer {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 20px;
-        background-color: rgba(51, 51, 51, 0.7);
-        color: #fff;
-        text-align: right;
-      }
-
-      footer p {
-        margin: 0;
-        font-size: 32px;
-      }
-    </style>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <nav>
-        <p>럭키즈 🍀</p>
-      </nav>
+        <h1><img src="./img/luckkids-logo.svg" alt="luckkids"></h1>
     </header>
     <main>
-      <section class="hero-section">
-        <!-- <div class="image-container image-left">
-          <img src="./static/image/1.png" alt="럭키즈1" width="100" />
-        </div> -->
-        <h1>럭키즈 소개페이지</h1>
-        <p>📢 개발중</p>
-        <div class="image-container image-right">
-          <img src="./static/image/2.png" alt="럭키즈2" width="250" />
-        </div>
-      </section>
+        <section class="section-kv">
+            <article class="article-title">
+                <h2>
+                    <span>
+                        <img src="./img/luckkids-title.png" alt="luckkids" class="d-block-pc">
+                        <img src="./img/luckkids-title_m.png" alt="luckkids" class="d-block-m">
+                    </span>
+                    <small>행운을 키우는 습관앱, <br class="d-block-m"/>럭키즈</small>
+                </h2>
+            </article>
+        </section>
+        <section class="section-character">
+            <article class="article-img">
+                <figure>
+                    <div class="particle-stick-wrap">
+                        <span class="shape-1"><img src="./img/shape-1.png" alt=""></span>
+                        <span class="shape-2"><img src="./img/shape-2.png" alt=""></span>
+                        <span class="shape-3"><img src="./img/shape-3.png" alt=""></span>
+                        <span class="shape-4"><img src="./img/shape-4.png" alt=""></span>
+                        <span class="shape-5"><img src="./img/shape-5.png" alt=""></span>
+                        <span class="shape-6"><img src="./img/shape-6.png" alt=""></span>
+                        <span class="shape-7"><img src="./img/shape-7.png" alt=""></span>
+                    </div>
+                    <div class="character-wrap">
+                        <img src="./img/luckkids-circle.png" alt="" class="bg d-block-pc">
+                        <img src="./img/luckkids-circle_m.png" alt="" class="bg d-block-m">
+                        <span>
+                            <img src="./img/luckkids.png" alt="" class="luckkids">
+                        </span>
+                    </div>
+                </figure>
+            </article>
+            <article class="article-description">
+                <p>우리는 행운아! <br class="d-block-m"/> 행운을 키우지! <br/><br class="d-block-m"/>건강하고 긍정적인 몸과 <br class="d-block-m"/>마음을 만드는 습관이 <br/>우리의 행운을 키워줄 거예요.</p>
+
+                <a href="#" target="_blank"><img src="./img/apple-logo.svg" alt="">App Store</a>
+            </article>
+        </section>
     </main>
     <footer>
-      <p>&copy; 2023 럭키즈. 모든 권리 보유.</p>
+        <span>ⓒ LUCKKIDS. ALL RIGHTS RESERVED</span>
+        <ul>
+            <li><a href="https://www.instagram.com/luckkids.official/" target="_blank"><img src="./img/footer-instagram.svg" alt="instagram"></a></li>
+            <li><a href="" target="_blank"><img src="./img/footer-behance.svg" alt="behance"></a></li>
+            <li><a href="https://brunch.co.kr/@luckkids" target="_blank"><img src="./img/footer-brunch.svg" alt="brunch"></a></li>
+        </ul>
     </footer>
-  </body>
+</body>
+<script src="js/page.js"></script>
 </html>
