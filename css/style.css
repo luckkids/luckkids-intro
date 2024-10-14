@@ -6,7 +6,7 @@
 body{
     position: relative;
     background: #000;
-    font-family: 'Pretendard';
+    font-family: 'Pretendard', sans-serif;
 }
 
 .d-block-m{
