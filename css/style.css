@@ -39,6 +39,14 @@ footer ul{
     gap:15px
 }
 
+footer a{
+    display: block;
+}
+
+footer a img{
+    width:30px;
+}
+
 /*-------------------------
 * Main
 -------------------------*/
@@ -236,7 +244,26 @@ main section{max-width:1780px; margin:0 auto;}
     header h1 img{width:100%;}
 
     footer{
-        padding:30px 10vw;
+        padding:7.6vw 6.1vw;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer span{
+        margin-bottom:7.6vw;
+    }
+
+    footer ul{
+        gap:3.8vw;
+    }
+
+    footer a{
+        width:7.6vw;
+    }
+
+    footer a img{
+        width:100%;
+        height:auto;
     }
 
     main{
