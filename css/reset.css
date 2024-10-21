@@ -20,5 +20,5 @@ img{font-size:12px;}/*alt 사라짐방지*/
 - selection
 ----------------------*/
 ::-moz-selection {background: rgb(251, 186, 51);color:rgb(0, 0, 0);}
-::selection {background: rgb(251, 186, 51);color:rgb(0, 0, 0);}
+::selection {background: #8FF377;color:#000;}
 ::-moz-selection {background: rgb(251, 186, 51);color:rgb(0, 0, 0);}
