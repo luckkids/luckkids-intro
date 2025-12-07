@@ -79,9 +79,9 @@ const Page = (function () {
 
     // 테스트 시작 버튼 클릭
     startBtn.addEventListener("click", () => {
-      // 여기에 테스트 페이지로 이동하는 로직 추가
       popupOverlay.classList.remove("active");
-      // 예: window.location.href = '/test.html';
+      // TODO: 외부 URL로 이동
+      // window.location.href = 'https://example.com/test';
     });
 
     // 오버레이 클릭 시 닫기
