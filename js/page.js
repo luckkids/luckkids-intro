@@ -80,8 +80,7 @@ const Page = (function () {
     // 테스트 시작 버튼 클릭
     startBtn.addEventListener("click", () => {
       popupOverlay.classList.remove("active");
-      // TODO: 외부 URL로 이동
-      // window.location.href = 'https://example.com/test';
+      window.location.href = "https://quiz.luckkids.co.kr/";
     });
 
     // 오버레이 클릭 시 닫기
