@@ -80,7 +80,7 @@ const Page = (function () {
     // 테스트 시작 버튼 클릭
     startBtn.addEventListener("click", () => {
       popupOverlay.classList.remove("active");
-      window.location.href = "https://quiz.luckkids.co.kr/";
+      window.location.href = "https://lucktest.luckkids.co.kr/";
     });
 
     // 오버레이 클릭 시 닫기
